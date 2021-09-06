@@ -24,7 +24,7 @@ mongoose
 app.use(express.static("./uploads"));
 app.use(express.json());
 app.use(cors());
-app.use("/churchdata/api", path);
+app.use("/churchdata", path);
 
 app.get("/", async (req, res) => {
   res.send("connected successfully");
